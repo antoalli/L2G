@@ -1,0 +1,6 @@
+[submodule "grasp-evaluator"]
+	path = grasp-evaluator
+	url = https://github.com/mrudorfer/grasp-evaluator
+[submodule "GPNet-simulator"]
+	path = GPNet-simulator
+	url = https://github.com/mrudorfer/GPNet-simulator

@@ -1,0 +1,19 @@
+---
+global_encoder:
+  nearest_neighboors: 24
+  latent_dim: 1024
+GPD_local:
+  pre_Nfeat: [ 3, 33, 66, 99 ]
+  conv_n_layers: 3
+  conv_layer:
+    in_feat: 99
+    fnet_feat: 99
+    out_feat: 99
+    rank_theta: 11
+    stride_th1: 33
+    stride_th2: 33
+    min_nn: 8
+aggr_out_feat: 128
+pretrain:
+  checkpoint_global_enco: "deco_pretext_weights/global_pretrain.pth"
+  checkpoint_local_enco: "deco_pretext_weights/local_pretrain.pth"
