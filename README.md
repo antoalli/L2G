@@ -79,13 +79,13 @@ Use the provided bash scripts to train and evaluate L2G models. Training is perf
 - Train and Evaluate **L2G with PointNet2 Encoder**
 ```shell
 conda activate L2G_env
-sh run_l2g_pn2.sh
+source run_l2g_pn2.sh
 ```
 
 - Train and Evaluate **L2G with DeCo Encoder**
 ```shell
 conda activate L2G_env
-sh run_l2g_deco.sh
+source run_l2g_deco.sh
 ```
 
 ## TODOs

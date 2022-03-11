@@ -11,7 +11,7 @@ M=500  # num grasps / sampled contacts
 ENCODER="pointnet2"
 TRAIN_SPLIT="train"
 SEED=14025
-CHECKPOINTS_DIR=./experiments
+CHECKPOINTS_DIR=${CODE_ROOT}/experiments
 LR=0.0001
 WD=0.0001
 LR_STEP=100
@@ -60,10 +60,10 @@ done
 # will produce rule-based and simulation results
 cd "${CODE_ROOT}/grasp-evaluator" || EXIT
 # ShapeNetSem-8
-python -m gpnet_eval --dataset_root "$SN_DATA" --object_models_dir "${SN_DATA}/urdf" --test_dir $SN_TEST;
+python -m grasp_eval --dataset_root "$SN_DATA" --object_models_dir "${SN_DATA}/urdf" --test_dir $SN_TEST;
 # YCB-8
-python -m gpnet_eval --dataset_root "$YCB8_DATA" --object_models_dir "${YCB8_DATA}/urdf" --test_dir $YCB8_TEST;
+python -m grasp_eval --dataset_root "$YCB8_DATA" --object_models_dir "${YCB8_DATA}/urdf" --test_dir $YCB8_TEST;
 # YCB-76
-python -m gpnet_eval --dataset_root "$YCB76_DATA" --object_models_dir "${YCB76_DATA}/urdf" --test_dir $YCB76_TEST --no_cov;
+python -m grasp_eval --dataset_root "$YCB76_DATA" --object_models_dir "${YCB76_DATA}/urdf" --test_dir $YCB76_TEST --no_cov;
 # finish
 cd "$CODE_ROOT" || EXIT
