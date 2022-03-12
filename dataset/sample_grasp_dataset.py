@@ -307,7 +307,12 @@ class SampleGraspData(data.Dataset):
         self.contact_th = contact_th
         self.view = view
         print(f"SampleGraspData - data_root: {self.data_root}, split: {self.split}")
+
         file_path = osp.join(self.data_root, "%s_set.csv" % self.split)
+        # fix ycb_8 csv path
+        if self.split == "ycb8_test":
+            file_path = osp.join(self.data_root, "test_set.csv")
+
         assert osp.exists(file_path), f"Cannot find split file at {file_path}"
         self.shapes = []
         with open(file_path, 'r') as f:
@@ -414,7 +419,7 @@ class YCB76_Data(data.Dataset):
         @param data_root: the root dataset folder (containing test_set.csv)
         @param view: the view to consider for the depth image (test only, random at training time)
         """
-        assert split == 'test', f"YCB_76_Data - only test split available."
+        assert split == "test", f"YCB_76_Data - only test split available."
         assert 0 <= view <= 9, f"YCB_76_Data - only views 0 to 9 available."
         self.data_root = data_root
         self.split = split
