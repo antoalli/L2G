@@ -1,4 +1,5 @@
 # End-to-End Learning to Grasp from Object Point Clouds
+This is the **[PyTorch](https://pytorch.org)** implementation of the paper **[Learning to Grasp (*L2G*)](https://doi.org/10.48550/arXiv.2203.05585)**. <br><br>
 **Learning to Grasp (*L2G*)** is an efficient end-to-end learning strategy to generate 6-DOF parallel-jaw grasps starting from a partial point cloud of an object. Our approach does not exploit any geometric assumption, it is instead guided by a principled multi-task optimization objective that generates a diverse set of grasps by combining **contact point sampling**, **grasp regression**, and **grasp evaluation**.
 <p align="center">  
 <img src="assets/teaser.png">  
