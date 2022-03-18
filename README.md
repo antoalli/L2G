@@ -4,6 +4,13 @@ This is the **[PyTorch](https://pytorch.org)** implementation of the paper **[Le
 <p align="center">  
 <img src="assets/teaser.png">  
 </p>
+<p align="center">
+<a href="https://www.youtube.com/watch?v=lvT0ROQH7Xs" alt="Grasping Trials on YouTube">
+    <img src="assets/grasp-video-trailer.gif" alt="Grasp Trials GIF" />
+</a>
+<br/>
+(click <a href="https://www.youtube.com/watch?v=lvT0ROQH7Xs" alt="Grasping Trials on YouTube">here</a> to watch higher-res, full-length version)
+</p>
 
 ## Environment
 This code is tested with Python 3.7.12, PyTorch 1.8.0 and CUDA 11.1 (system-wide). <br>
