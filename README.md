@@ -96,12 +96,6 @@ conda activate L2G_env
 source run_l2g_deco.sh
 ```
 
-## TODOs
-- [x] Upload Code
-- [x] Upload Data
-- [ ] Real-World experiments video
-- [ ] Link to the arXiv and citation
-
 ## Acknowledgement
 Our code release is based on the following works
 * [antoalli/Deco](https://github.com/antoalli/Deco): Denoise and Contrast for Category Agnostic Shape Completion (encoder).
